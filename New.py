@@ -89,7 +89,7 @@ if classifier != "None":
         df = pd.DataFrame(report).transpose()
         st.write(df)
         
-        X = df.drop('victory_status')
+        X = df.drop('victory_status', axis=0)
         model.feature_importances_
 
         important_factors = pd.DataFrame({'Factor': list(X.columns), 'Importance': model.feature_importances_})
