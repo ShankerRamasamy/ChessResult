@@ -96,7 +96,7 @@ if classifier != "None":
 
         important_factors.sort_values(by=['Importance'], ascending=False,inplace=True)
 
-        print(important_factors)
+        important_factors
         
         st.write("Important Features: ",important_factors)
         
