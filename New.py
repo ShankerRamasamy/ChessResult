@@ -89,6 +89,16 @@ if classifier != "None":
         df = pd.DataFrame(report).transpose()
         st.write(df)
         
+        RandomForest.feature_importances_
+
+        important_factors = pd.DataFrame({'Factor': list(X.columns), 'Importance': RandomForest.feature_importances_})
+
+        important_factors.sort_values(by=['Importance'], ascending=False,inplace=True)
+
+        print(important_factors)
+        
+        st.write(important_factors)
+        
 
     
 st.text("Reference material for creating this webapp from: Dr.Yu Yong Poh, analyticsvidhya.com")
