@@ -55,7 +55,7 @@ def split(df):
     
     return Xtrain_scaled, Xtest_scaled, ytrain, ytest
     
-    Xtrain_scaled, Xtest_scaled, ytrain, ytest = split(df)
+Xtrain_scaled, Xtest_scaled, ytrain, ytest = split(df)
 
 
 
