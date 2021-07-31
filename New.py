@@ -90,15 +90,9 @@ if classifier != "None":
         st.write(df)
         
         
-        model.feature_importances_
-
-        important_factors = pd.DataFrame({'Factor': list(X.columns), 'Importance': model.feature_importances_})
-
-        important_factors.sort_values(by=['Importance'], ascending=False,inplace=True)
-
-        important_factors
         
-        st.write("Important Features: ",important_factors)
+        
+        
         
 
     
