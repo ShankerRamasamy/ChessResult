@@ -92,13 +92,13 @@ if classifier != "None":
         
         model.feature_importances_
 
-        important_factors = pd.DataFrame({'Factor': list(df.X.columns), 'Importance': model.feature_importances_})
+        important_factors = pd.DataFrame({'Factor': list(X.columns), 'Importance': model.feature_importances_})
 
         important_factors.sort_values(by=['Importance'], ascending=False,inplace=True)
 
         print(important_factors)
         
-        st.write(important_factors)
+        st.write("Important Features: ",important_factors)
         
 
     
