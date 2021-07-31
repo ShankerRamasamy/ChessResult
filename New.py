@@ -89,10 +89,10 @@ if classifier != "None":
         df = pd.DataFrame(report).transpose()
         st.write(df)
         
-        RandomForest = RandomForestClassifier()
-        RandomForest.feature_importances_
+        
+        model.feature_importances_
 
-        important_factors = pd.DataFrame({'Factor': list(X.columns), 'Importance': RandomForest.feature_importances_})
+        important_factors = pd.DataFrame({'Factor': list(X.columns), 'Importance': model.feature_importances_})
 
         important_factors.sort_values(by=['Importance'], ascending=False,inplace=True)
 
